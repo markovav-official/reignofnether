@@ -66,9 +66,9 @@ public class Beacon extends ProductionBuilding {
 
         this.explodeChance = 0.2f;
 
-        this.abilities.add(new BeaconWealth(), Keybindings.keyQ);
-        this.abilities.add(new BeaconHaste(), Keybindings.keyW);
-        this.abilities.add(new BeaconRegeneration(), Keybindings.keyE);
+        this.abilities.add(new BeaconWealth(), Keybindings.key3);
+        this.abilities.add(new BeaconHaste(), Keybindings.key4);
+        this.abilities.add(new BeaconRegeneration(), Keybindings.key5);
         this.abilities.add(new BeaconResistance(), Keybindings.keyR);
         this.abilities.add(new BeaconStrength(), Keybindings.keyT);
 

@@ -56,7 +56,7 @@ public class TownCentre extends ProductionBuilding {
         BackToWorkBuilding backToWork = new BackToWorkBuilding();
         this.abilities.add(backToWork, Keybindings.build);
 
-        this.productions.add(ProductionItems.VILLAGER, Keybindings.keyQ);
+        this.productions.add(ProductionItems.VILLAGER, Keybindings.key3);
     }
 
     public Faction getFaction() {return Faction.VILLAGERS;}

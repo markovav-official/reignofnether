@@ -30,9 +30,9 @@ public class FactionRegistries {
 
     public static void register() {
         // Monsters
-        register(Faction.MONSTERS, Buildings.MAUSOLEUM, Keybindings.keyQ);
-        register(Faction.MONSTERS, Buildings.SPRUCE_STOCKPILE, Keybindings.keyW);
-        register(Faction.MONSTERS, Buildings.HAUNTED_HOUSE, Keybindings.keyE);
+        register(Faction.MONSTERS, Buildings.MAUSOLEUM, Keybindings.key3);
+        register(Faction.MONSTERS, Buildings.SPRUCE_STOCKPILE, Keybindings.key4);
+        register(Faction.MONSTERS, Buildings.HAUNTED_HOUSE, Keybindings.key5);
         register(Faction.MONSTERS, Buildings.PUMPKIN_FARM, Keybindings.keyR);
         register(Faction.MONSTERS, Buildings.DARK_WATCHTOWER, Keybindings.keyT);
         register(Faction.MONSTERS, Buildings.GRAVEYARD, Keybindings.keyY);
@@ -47,9 +47,9 @@ public class FactionRegistries {
         register(Faction.MONSTERS, Buildings.BEACON);
 
         //Piglins
-        register(Faction.PIGLINS, Buildings.CENTRAL_PORTAL, Keybindings.keyQ);
-        register(Faction.PIGLINS, Buildings.PORTAL_BASIC, Keybindings.keyW);
-        register(Faction.PIGLINS, Buildings.NETHERWART_FARM, Keybindings.keyE);
+        register(Faction.PIGLINS, Buildings.CENTRAL_PORTAL, Keybindings.key3);
+        register(Faction.PIGLINS, Buildings.PORTAL_BASIC, Keybindings.key4);
+        register(Faction.PIGLINS, Buildings.NETHERWART_FARM, Keybindings.key5);
         register(Faction.PIGLINS, Buildings.BASTION, Keybindings.keyR);
         register(Faction.PIGLINS, Buildings.HOGLIN_STABLES, Keybindings.keyT);
         register(Faction.PIGLINS, Buildings.FLAME_SANCTUARY, Keybindings.keyY);
@@ -61,9 +61,9 @@ public class FactionRegistries {
         register(Faction.PIGLINS, Buildings.BEACON);
 
         //Villagers
-        register(Faction.VILLAGERS, Buildings.TOWN_CENTRE, Keybindings.keyQ);
-        register(Faction.VILLAGERS, Buildings.OAK_STOCKPILE, Keybindings.keyW);
-        register(Faction.VILLAGERS, Buildings.VILLAGER_HOUSE, Keybindings.keyE);
+        register(Faction.VILLAGERS, Buildings.TOWN_CENTRE, Keybindings.key3);
+        register(Faction.VILLAGERS, Buildings.OAK_STOCKPILE, Keybindings.key4);
+        register(Faction.VILLAGERS, Buildings.VILLAGER_HOUSE, Keybindings.key5);
         register(Faction.VILLAGERS, Buildings.WHEAT_FARM, Keybindings.keyR);
         register(Faction.VILLAGERS, Buildings.WATCHTOWER, Keybindings.keyT);
         register(Faction.VILLAGERS, Buildings.BARRACKS, Keybindings.keyY);
@@ -77,9 +77,9 @@ public class FactionRegistries {
         register(Faction.VILLAGERS, Buildings.BEACON);
 
         //Neutral
-        register(Faction.NONE, Buildings.CAPTURABLE_BEACON, Keybindings.keyQ);
-        register(Faction.NONE, Buildings.HEALING_FOUNTAIN, Keybindings.keyW);
-        register(Faction.NONE, Buildings.END_PORTAL, Keybindings.keyE);
+        register(Faction.NONE, Buildings.CAPTURABLE_BEACON, Keybindings.key3);
+        register(Faction.NONE, Buildings.HEALING_FOUNTAIN, Keybindings.key4);
+        register(Faction.NONE, Buildings.END_PORTAL, Keybindings.key5);
         register(Faction.NONE, Buildings.NEUTRAL_TRANSPORT_PORTAL, Keybindings.keyR);
     }
 }

@@ -64,8 +64,8 @@ public class MilitiaUnit extends Vindicator implements Unit, AttackerUnit, Range
     public static final Abilities ABILITIES = new Abilities();
     static {
         ABILITIES.add(new BackToWorkUnit(), Keybindings.build);
-        ABILITIES.add(new WeaponSwapBow(), Keybindings.keyQ);
-        ABILITIES.add(new WeaponSwapSword(), Keybindings.keyQ);
+        ABILITIES.add(new WeaponSwapBow(), Keybindings.key3);
+        ABILITIES.add(new WeaponSwapSword(), Keybindings.key3);
     }
 
     //region

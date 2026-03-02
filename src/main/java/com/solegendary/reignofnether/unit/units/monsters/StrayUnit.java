@@ -48,7 +48,7 @@ import java.util.List;
 public class StrayUnit extends Stray implements Unit, AttackerUnit, RangedAttackerUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new MountSpider(), Keybindings.keyQ);
+        ABILITIES.add(new MountSpider(), Keybindings.key3);
     }
 
     //region

@@ -6,20 +6,22 @@ public class Keybindings {
     public static final Keybinding pause = new Keybinding(GLFW.GLFW_KEY_ESCAPE, "ESC", "Pause");
     public static final Keybinding zoomIn = new Keybinding(GLFW.GLFW_KEY_KP_ADD, "+", "+");
     public static final Keybinding zoomOut = new Keybinding(GLFW.GLFW_KEY_KP_SUBTRACT, "-", "+");
-    public static final Keybinding panPlusX = new Keybinding(GLFW.GLFW_KEY_LEFT, "X+", "Pan map X+");
-    public static final Keybinding panMinusX = new Keybinding(GLFW.GLFW_KEY_RIGHT, "X-", "Pan map X-");
-    public static final Keybinding panPlusZ = new Keybinding(GLFW.GLFW_KEY_UP, "Z+", "Pan map Z+");
-    public static final Keybinding panMinusZ = new Keybinding(GLFW.GLFW_KEY_DOWN, "Z-", "Pan map Z-");
-    public static final Keybinding rotCW = new Keybinding(GLFW.GLFW_KEY_RIGHT, "", "Rotate map clockwise");
-    public static final Keybinding rotCCW = new Keybinding(GLFW.GLFW_KEY_LEFT, "", "Rotate map counter-clockwise");
+
+    public static final Keybinding panPlusX = new Keybinding(GLFW.GLFW_KEY_A, "A", "Pan map X+");
+    public static final Keybinding panMinusX = new Keybinding(GLFW.GLFW_KEY_D, "D", "Pan map X-");
+    public static final Keybinding panPlusZ = new Keybinding(GLFW.GLFW_KEY_W, "W", "Pan map Z+");
+    public static final Keybinding panMinusZ = new Keybinding(GLFW.GLFW_KEY_S, "S", "Pan map Z-");
+    public static final Keybinding rotCW = new Keybinding(GLFW.GLFW_KEY_Q, "", "Rotate map clockwise");
+    public static final Keybinding rotCCW = new Keybinding(GLFW.GLFW_KEY_E, "", "Rotate map counter-clockwise");
+
     public static final Keybinding reset = new Keybinding(GLFW.GLFW_KEY_RIGHT_CONTROL, "RC", "Reset");
     public static final Keybinding shiftMod = new Keybinding(GLFW.GLFW_KEY_LEFT_SHIFT, "", "Shift");
     public static final Keybinding ctrlMod = new Keybinding(GLFW.GLFW_KEY_LEFT_CONTROL, "LC", "Ctrl");
     public static final Keybinding altMod = new Keybinding(GLFW.GLFW_KEY_LEFT_ALT, "ALT", "Alt");
     public static final Keybinding cancelBuild = new Keybinding(GLFW.GLFW_KEY_DELETE, "DEL", "Cancel");
-    public static final Keybinding keyQ = new Keybinding(GLFW.GLFW_KEY_Q, "Q", "Q");
-    public static final Keybinding keyW = new Keybinding(GLFW.GLFW_KEY_W, "W", "W");
-    public static final Keybinding keyE =  new Keybinding(GLFW.GLFW_KEY_E, "E", "E");
+    public static final Keybinding key3 = new Keybinding(GLFW.GLFW_KEY_3, "3", "3"); // TODO
+    public static final Keybinding key4 = new Keybinding(GLFW.GLFW_KEY_4, "4", "4"); // TODO
+    public static final Keybinding key5 =  new Keybinding(GLFW.GLFW_KEY_5, "5", "5"); // TODO
     public static final Keybinding keyR = new Keybinding(GLFW.GLFW_KEY_R, "R", "R");
     public static final Keybinding keyT = new Keybinding(GLFW.GLFW_KEY_T, "T", "T");
     public static final Keybinding keyY = new Keybinding(GLFW.GLFW_KEY_Y, "Y", "Y");
@@ -32,12 +34,12 @@ public class Keybindings {
     public static final Keybinding keyM = new Keybinding(GLFW.GLFW_KEY_M, "M", "M");
     public static final Keybinding keyF = new Keybinding(GLFW.GLFW_KEY_F, "F", "F");
     public static final Keybinding keyC = new Keybinding(GLFW.GLFW_KEY_C, "C", "C");
-    public static final Keybinding keyD = new Keybinding(GLFW.GLFW_KEY_D, "D", "D");
+    public static final Keybinding key6 = new Keybinding(GLFW.GLFW_KEY_6, "6", "6"); // TODO
     public static final Keybinding keyJ = new Keybinding(GLFW.GLFW_KEY_J, "J", "J");
     public static final Keybinding keyK = new Keybinding(GLFW.GLFW_KEY_K, "K", "K");
     public static final Keybinding keyG = new Keybinding(GLFW.GLFW_KEY_G, "G", "G");
-    public static final Keybinding attack = new Keybinding(GLFW.GLFW_KEY_A, "A", "Attack");
-    public static final Keybinding stop = new Keybinding(GLFW.GLFW_KEY_S, "S", "Stop");
+    public static final Keybinding attack = new Keybinding(GLFW.GLFW_KEY_1, "1", "Attack"); // TODO
+    public static final Keybinding stop = new Keybinding(GLFW.GLFW_KEY_2, "2", "Stop"); // TODO
     public static final Keybinding hold = new Keybinding(GLFW.GLFW_KEY_H, "H", "Hold");
     public static final Keybinding move = new Keybinding(GLFW.GLFW_KEY_M, "M", "Move");
     public static final Keybinding build = new Keybinding(GLFW.GLFW_KEY_B, "B", "Build");

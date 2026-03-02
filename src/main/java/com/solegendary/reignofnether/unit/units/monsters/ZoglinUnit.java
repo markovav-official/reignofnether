@@ -44,7 +44,7 @@ import java.util.List;
 public class ZoglinUnit extends Zoglin implements Unit, AttackerUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new Eject(), Keybindings.keyQ);
+        ABILITIES.add(new Eject(), Keybindings.key3);
     }
 
     //region

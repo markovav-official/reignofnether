@@ -38,8 +38,8 @@ public class Barracks extends ProductionBuilding {
 
         this.explodeChance = 0.2f;
 
-        this.productions.add(ProductionItems.VINDICATOR, Keybindings.keyQ);
-        this.productions.add(ProductionItems.PILLAGER, Keybindings.keyW);
+        this.productions.add(ProductionItems.VINDICATOR, Keybindings.key3);
+        this.productions.add(ProductionItems.PILLAGER, Keybindings.key4);
     }
 
     public Faction getFaction() {return Faction.VILLAGERS;}

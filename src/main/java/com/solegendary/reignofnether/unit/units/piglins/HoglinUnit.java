@@ -57,8 +57,8 @@ import static com.solegendary.reignofnether.util.MiscUtil.fcs;
 public class HoglinUnit extends Hoglin implements Unit, AttackerUnit, ConvertableUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new Eject(), Keybindings.keyQ);
-        ABILITIES.add(new Bloodlust(), Keybindings.keyW);
+        ABILITIES.add(new Eject(), Keybindings.key3);
+        ABILITIES.add(new Bloodlust(), Keybindings.key4);
     }
 
     //region

@@ -53,8 +53,8 @@ import java.util.function.Predicate;
 public class RavagerUnit extends Ravager implements Unit, AttackerUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new Roar(), Keybindings.keyQ);
-        ABILITIES.add(new Eject(), Keybindings.keyW);
+        ABILITIES.add(new Roar(), Keybindings.key3);
+        ABILITIES.add(new Eject(), Keybindings.key4);
     }
 
     //region

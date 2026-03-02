@@ -12,7 +12,6 @@ import com.solegendary.reignofnether.building.production.ProductionItems;
 import com.solegendary.reignofnether.faction.Faction;
 import com.solegendary.reignofnether.keybinds.Keybindings;
 import com.solegendary.reignofnether.registrars.MobEffectRegistrar;
-import com.solegendary.reignofnether.research.ResearchClient;
 import com.solegendary.reignofnether.research.ResearchServerEvents;
 import com.solegendary.reignofnether.resources.ResourceCost;
 import com.solegendary.reignofnether.resources.ResourceCosts;
@@ -55,7 +54,7 @@ import java.util.List;
 public class MarauderUnit extends PiglinBrute implements Unit, AttackerUnit, KeyframeAnimated {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new Bloodlust(), Keybindings.keyQ);
+        ABILITIES.add(new Bloodlust(), Keybindings.key3);
     }
 
     //region

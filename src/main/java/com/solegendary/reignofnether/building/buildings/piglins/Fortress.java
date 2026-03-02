@@ -48,9 +48,9 @@ public class Fortress extends ProductionBuilding {
         this.startingBlockTypes.add(Blocks.POLISHED_BASALT);
         this.startingBlockTypes.add(Blocks.NETHER_BRICK_STAIRS);
 
-        this.productions.add(ProductionItems.RESEARCH_ADVANCED_PORTALS, Keybindings.keyQ);
-        this.productions.add(ProductionItems.RESEARCH_BLOODLUST, Keybindings.keyW);
-        this.productions.add(ProductionItems.RESEARCH_SOUL_FIREBALLS, Keybindings.keyE);
+        this.productions.add(ProductionItems.RESEARCH_ADVANCED_PORTALS, Keybindings.key3);
+        this.productions.add(ProductionItems.RESEARCH_BLOODLUST, Keybindings.key4);
+        this.productions.add(ProductionItems.RESEARCH_SOUL_FIREBALLS, Keybindings.key5);
     }
 
     public Faction getFaction() {return Faction.PIGLINS;}

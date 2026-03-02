@@ -50,7 +50,7 @@ public class Mausoleum extends ProductionBuilding {
         this.startingBlockTypes.add(Blocks.STONE_BRICKS);
         this.startingBlockTypes.add(Blocks.STONE_BRICK_STAIRS);
 
-        this.productions.add(ProductionItems.ZOMBIE_VILLAGER, Keybindings.keyQ);
+        this.productions.add(ProductionItems.ZOMBIE_VILLAGER, Keybindings.key3);
     }
 
     public Faction getFaction() {

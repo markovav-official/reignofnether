@@ -45,7 +45,7 @@ public class SculkCatalyst extends Building {
 
         this.startingBlockTypes.add(Blocks.POLISHED_BLACKSTONE);
 
-        this.abilities.add(new Sacrifice(), Keybindings.keyQ);
+        this.abilities.add(new Sacrifice(), Keybindings.key3);
     }
 
     public Faction getFaction() {

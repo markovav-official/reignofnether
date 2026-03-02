@@ -28,7 +28,6 @@ import com.solegendary.reignofnether.unit.interfaces.HeroUnit;
 import com.solegendary.reignofnether.unit.interfaces.KeyframeAnimated;
 import com.solegendary.reignofnether.unit.interfaces.Unit;
 import com.solegendary.reignofnether.unit.modelling.animations.RoyalGuardAnimations;
-import com.solegendary.reignofnether.unit.modelling.renderers.RoyalGuardRenderer;
 import com.solegendary.reignofnether.util.MiscUtil;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
 import net.minecraft.client.animation.AnimationDefinition;
@@ -72,9 +71,9 @@ import java.util.Set;
 public class RoyalGuardUnit extends Vindicator implements AttackerUnit, HeroUnit, KeyframeAnimated {
     public final Abilities ABILITIES = new Abilities(
         List.of(
-            new Pair<>(new MaceSlam(), Keybindings.keyQ),
-            new Pair<>(new TauntingCry(), Keybindings.keyW),
-            new Pair<>(new BattleRagePassive(), Keybindings.keyE),
+            new Pair<>(new MaceSlam(), Keybindings.key3),
+            new Pair<>(new TauntingCry(), Keybindings.key4),
+            new Pair<>(new BattleRagePassive(), Keybindings.key5),
             new Pair<>(new Avatar(), Keybindings.keyR)
         )
     );

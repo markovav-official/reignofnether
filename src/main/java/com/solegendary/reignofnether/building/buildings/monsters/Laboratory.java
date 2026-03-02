@@ -21,9 +21,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Rotation;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import static com.solegendary.reignofnether.building.BuildingUtils.getAbsoluteBlockData;
 
@@ -49,9 +47,9 @@ public class Laboratory extends ProductionBuilding {
 
         this.abilities.add(new CallLightning(), Keybindings.keyL);
 
-        this.productions.add(ProductionItems.RESEARCH_HUSKS, Keybindings.keyQ);
-        this.productions.add(ProductionItems.RESEARCH_DROWNED, Keybindings.keyW);
-        this.productions.add(ProductionItems.RESEARCH_STRAYS, Keybindings.keyE);
+        this.productions.add(ProductionItems.RESEARCH_HUSKS, Keybindings.key3);
+        this.productions.add(ProductionItems.RESEARCH_DROWNED, Keybindings.key4);
+        this.productions.add(ProductionItems.RESEARCH_STRAYS, Keybindings.key5);
         this.productions.add(ProductionItems.RESEARCH_BOGGED, Keybindings.keyR);
         this.productions.add(ProductionItems.RESEARCH_SPIDER_JOCKEYS, Keybindings.keyT);
         this.productions.add(ProductionItems.RESEARCH_POISON_SPIDERS, Keybindings.keyY);

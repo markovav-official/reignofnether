@@ -51,7 +51,7 @@ import java.util.UUID;
 public class WitherSkeletonUnit extends WitherSkeleton implements Unit, AttackerUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new WitherCloud(), Keybindings.keyQ);
+        ABILITIES.add(new WitherCloud(), Keybindings.key3);
     }
 
     //region

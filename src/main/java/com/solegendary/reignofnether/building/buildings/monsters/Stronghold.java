@@ -49,7 +49,7 @@ public class Stronghold extends ProductionBuilding {
         this.startingBlockTypes.add(Blocks.POLISHED_BLACKSTONE_WALL);
         this.startingBlockTypes.add(Blocks.DEEPSLATE);
 
-        this.productions.add(ProductionItems.WARDEN, Keybindings.keyQ);
+        this.productions.add(ProductionItems.WARDEN, Keybindings.key3);
     }
 
     public Faction getFaction() {

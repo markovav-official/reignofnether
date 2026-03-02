@@ -9,7 +9,6 @@ import com.solegendary.reignofnether.building.BuildingUtils;
 import com.solegendary.reignofnether.building.buildings.piglins.BasaltSprings;
 import com.solegendary.reignofnether.building.buildings.piglins.FlameSanctuary;
 import com.solegendary.reignofnether.building.production.ProductionItems;
-import com.solegendary.reignofnether.entities.BlazeUnitFireball;
 import com.solegendary.reignofnether.fogofwar.FogOfWarClientboundPacket;
 import com.solegendary.reignofnether.keybinds.Keybindings;
 import com.solegendary.reignofnether.research.ResearchServerEvents;
@@ -59,8 +58,8 @@ import static com.solegendary.reignofnether.util.MiscUtil.fcs;
 public class HeadhunterUnit extends PiglinBrute implements Unit, AttackerUnit, RangedAttackerUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new MountHoglin(), Keybindings.keyQ);
-        ABILITIES.add(new Bloodlust(), Keybindings.keyW);
+        ABILITIES.add(new MountHoglin(), Keybindings.key3);
+        ABILITIES.add(new Bloodlust(), Keybindings.key4);
     }
 
     //region

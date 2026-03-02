@@ -36,11 +36,11 @@ public class Graveyard extends ProductionBuilding {
 
         this.explodeChance = 0.2f;
 
-        this.productions.add(ProductionItems.ZOMBIE, Keybindings.keyQ);
-        this.productions.add(ProductionItems.HUSK, Keybindings.keyQ);
-        this.productions.add(ProductionItems.DROWNED, Keybindings.keyW);
-        this.productions.add(ProductionItems.SKELETON, Keybindings.keyE);
-        this.productions.add(ProductionItems.STRAY, Keybindings.keyE);
+        this.productions.add(ProductionItems.ZOMBIE, Keybindings.key3);
+        this.productions.add(ProductionItems.HUSK, Keybindings.key3);
+        this.productions.add(ProductionItems.DROWNED, Keybindings.key4);
+        this.productions.add(ProductionItems.SKELETON, Keybindings.key5);
+        this.productions.add(ProductionItems.STRAY, Keybindings.key5);
         this.productions.add(ProductionItems.BOGGED, Keybindings.keyR);
     }
 

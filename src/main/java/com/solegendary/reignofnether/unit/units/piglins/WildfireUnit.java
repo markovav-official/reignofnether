@@ -62,7 +62,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import oshi.util.tuples.Pair;
 
@@ -77,9 +76,9 @@ import static com.solegendary.reignofnether.util.MiscUtil.fcs;
 public class WildfireUnit extends Blaze implements Unit, AttackerUnit, RangedAttackerUnit, HeroUnit, KeyframeAnimated, RangeIndicator {
     public final Abilities ABILITIES = new Abilities(
             List.of(
-                    new Pair<>(new MoltenBomb(), Keybindings.keyQ),
-                    new Pair<>(new ScorchingGaze(), Keybindings.keyW),
-                    new Pair<>(new IntenseHeatPassive(), Keybindings.keyE),
+                    new Pair<>(new MoltenBomb(), Keybindings.key3),
+                    new Pair<>(new ScorchingGaze(), Keybindings.key4),
+                    new Pair<>(new IntenseHeatPassive(), Keybindings.key5),
                     new Pair<>(new SoulsAflame(), Keybindings.keyR)
             )
     );

@@ -58,7 +58,7 @@ public class EvokerUnit extends Evoker implements Unit, AttackerUnit, RangedAtta
     static {
         ABILITIES.add(new SetFangsLine());
         ABILITIES.add(new SetFangsCircle());
-        ABILITIES.add(new CastSummonVexes(), Keybindings.keyQ);
+        ABILITIES.add(new CastSummonVexes(), Keybindings.key3);
     }
 
     //region

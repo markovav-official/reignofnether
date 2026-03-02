@@ -37,8 +37,8 @@ public class SpiderLair extends ProductionBuilding {
 
         this.explodeChance = 0.2f;
 
-        this.productions.add(ProductionItems.SPIDER, Keybindings.keyQ);
-        this.productions.add(ProductionItems.POISON_SPIDER, Keybindings.keyW);
+        this.productions.add(ProductionItems.SPIDER, Keybindings.key3);
+        this.productions.add(ProductionItems.POISON_SPIDER, Keybindings.key4);
     }
 
     public Faction getFaction() {return Faction.MONSTERS;}

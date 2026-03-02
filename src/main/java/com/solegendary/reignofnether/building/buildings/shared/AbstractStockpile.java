@@ -6,7 +6,6 @@ import com.solegendary.reignofnether.building.buildings.placements.StockpilePlac
 import com.solegendary.reignofnether.building.production.ProductionBuilding;
 import com.solegendary.reignofnether.building.production.ProductionItems;
 import com.solegendary.reignofnether.keybinds.Keybindings;
-import com.solegendary.reignofnether.research.researchItems.ResearchResourceCapacity;
 import com.solegendary.reignofnether.resources.ResourceCost;
 import com.solegendary.reignofnether.resources.ResourceCosts;
 import net.minecraft.core.BlockPos;
@@ -28,7 +27,7 @@ public abstract class AbstractStockpile extends ProductionBuilding {
         this.canAcceptResources = true;
         this.canSetRallyPoint = false;
 
-        this.productions.add(ProductionItems.RESEARCH_RESOURCE_CAPACITY, Keybindings.keyQ);
+        this.productions.add(ProductionItems.RESEARCH_RESOURCE_CAPACITY, Keybindings.key3);
     }
 
     @Override

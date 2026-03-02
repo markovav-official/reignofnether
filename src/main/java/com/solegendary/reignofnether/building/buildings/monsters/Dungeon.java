@@ -43,7 +43,7 @@ public class Dungeon extends ProductionBuilding {
         this.startingBlockTypes.add(Blocks.DEEPSLATE_BRICK_STAIRS);
 
         this.explodeChance = 0.2f;
-        this.productions.add(ProductionItems.CREEPER, Keybindings.keyQ);
+        this.productions.add(ProductionItems.CREEPER, Keybindings.key3);
     }
 
     public Faction getFaction() {return Faction.MONSTERS;}

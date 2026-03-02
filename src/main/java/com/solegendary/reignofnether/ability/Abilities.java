@@ -1,6 +1,5 @@
 package com.solegendary.reignofnether.ability;
 
-import com.solegendary.reignofnether.building.BuildingPlaceButton;
 import com.solegendary.reignofnether.building.BuildingPlacement;
 import com.solegendary.reignofnether.hud.AbilityButton;
 import com.solegendary.reignofnether.hud.Button;
@@ -12,14 +11,13 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 import oshi.util.tuples.Pair;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Abilities {
     public static final List<Keybinding> ABILITY_KEYBINDS = List.of(
-            Keybindings.keyQ,
-            Keybindings.keyW,
-            Keybindings.keyE,
+            Keybindings.key3,
+            Keybindings.key4,
+            Keybindings.key5,
             Keybindings.keyR,
             Keybindings.keyT,
             Keybindings.keyY

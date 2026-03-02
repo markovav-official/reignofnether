@@ -49,9 +49,9 @@ public class Bastion extends ProductionBuilding {
 
         this.explodeChance = 0.2f;
 
-        this.productions.add(ProductionItems.RESEARCH_BRUTE_SHIELDS, Keybindings.keyQ);
-        this.productions.add(ProductionItems.RESEARCH_HEAVY_TRIDENTS, Keybindings.keyW);
-        this.productions.add(ProductionItems.RESEARCH_CLEAVING_FLAILS, Keybindings.keyE);
+        this.productions.add(ProductionItems.RESEARCH_BRUTE_SHIELDS, Keybindings.key3);
+        this.productions.add(ProductionItems.RESEARCH_HEAVY_TRIDENTS, Keybindings.key4);
+        this.productions.add(ProductionItems.RESEARCH_CLEAVING_FLAILS, Keybindings.key5);
     }
 
     public Faction getFaction() {return Faction.PIGLINS;}

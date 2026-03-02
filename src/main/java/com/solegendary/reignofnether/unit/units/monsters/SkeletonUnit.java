@@ -50,7 +50,7 @@ import java.util.List;
 public class SkeletonUnit extends Skeleton implements Unit, AttackerUnit, RangedAttackerUnit, ConvertableUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new MountSpider(), Keybindings.keyQ);
+        ABILITIES.add(new MountSpider(), Keybindings.key3);
     }
 
     //region

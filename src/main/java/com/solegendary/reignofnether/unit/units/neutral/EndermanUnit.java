@@ -41,7 +41,7 @@ import java.util.List;
 public class EndermanUnit extends EnderMan implements Unit, AttackerUnit {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new Teleport(), Keybindings.keyQ);
+        ABILITIES.add(new Teleport(), Keybindings.key3);
     }
 
     //region

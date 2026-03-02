@@ -45,7 +45,7 @@ public class EndPortal extends ProductionBuilding {
 
         this.explodeChance = 0.2f;
 
-        this.productions.add(ProductionItems.ENDERMAN, Keybindings.keyQ);
+        this.productions.add(ProductionItems.ENDERMAN, Keybindings.key3);
     }
 
     public Faction getFaction() {return Faction.NONE;}

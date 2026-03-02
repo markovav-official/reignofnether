@@ -24,6 +24,7 @@ import com.solegendary.reignofnether.util.MyMath;
 import net.minecraft.client.CameraType;
 import net.minecraft.client.CloudStatus;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.debug.GameModeSwitcherScreen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.client.tutorial.TutorialSteps;
 import net.minecraft.core.BlockPos;
@@ -111,6 +112,9 @@ public class OrthoviewClientEvents {
     private static float mouseLeftDownX = 0;
     private static float mouseLeftDownY = 0;
     public static final float MAX_PAN_SENSITIVITY = 3.0f;
+
+    private static boolean LOCK_ROTATE_CCW = false;
+    private static boolean LOCK_ROTATE_CW = false;
 
     // by default orthoview players stay at BASE_Y, but can be raised to as high as MAX_Y if they are clipping terrain
     public static double orthoviewPlayerBaseY = 100;
@@ -500,9 +504,10 @@ public class OrthoviewClientEvents {
         if (!enabled || isCameraLocked()) {
             return;
         }
-        if (Keybindings.altMod.isDown()) {
-            zoomCam((float) sign(evt.getScrollDelta()) * -ZOOM_STEP_SCROLL);
+        if (Keybindings.ctrlMod.isDown()) {
+            return;
         }
+        zoomCam((float) sign(evt.getScrollDelta()) * -ZOOM_STEP_SCROLL);
     }
 
     @SubscribeEvent
@@ -568,18 +573,29 @@ public class OrthoviewClientEvents {
         float panKeyStep = 1.5f * (getZoom() / ZOOM_MAX);
 
         if (!isCameraLocked() && !Keybindings.altMod.isDown()) {
+            var faster = Keybindings.ctrlMod.isDown();
             // pan camera with keys
             if (Keybindings.panPlusX.isDown()) {
-                panCam(getEdgeCamPanSensitivity(), 0, 0);
+                panCam(getEdgeCamPanSensitivity() / (faster ? 1 : 2), 0, 0);
             } else if (Keybindings.panMinusX.isDown()) {
-                panCam(-getEdgeCamPanSensitivity(), 0, 0);
+                panCam(-getEdgeCamPanSensitivity() / (faster ? 1 : 2), 0, 0);
             }
+
             if (Keybindings.panPlusZ.isDown()) {
-                panCam(0, 0, getEdgeCamPanSensitivity());
+                panCam(0, 0, getEdgeCamPanSensitivity() / (faster ? 1 : 2));
             } else if (Keybindings.panMinusZ.isDown()) {
-                panCam(0, 0, -getEdgeCamPanSensitivity());
+                panCam(0, 0, -getEdgeCamPanSensitivity() / (faster ? 1 : 2));
+            }
+
+            if (Keybindings.rotCCW.isDown()) {
+                rotateCam(faster ? 2 : 1, 0);
+            }
+
+            if (Keybindings.rotCW.isDown()) {
+                rotateCam(-(faster ? 2 : 1), 0);
             }
         }
+
         // note that we treat x and y rot as horizontal and vertical, but MC treats it the other way around...
         if (player != null) {
             player.setXRot(-camRotY - camRotAdjY);
@@ -703,5 +719,22 @@ public class OrthoviewClientEvents {
                 -(top + bot) / (top - bot), 0, 0, -2.0f / (far - near), -(far + near) / (far - near), 0, 0, 0, 1);
 
         return m1;
+    }
+
+    private static int mouseFixTimer = -1;
+
+    @SubscribeEvent
+    public static void fixCursorGrab_onScreenClose(ScreenEvent.Closing event) {
+        if (event.getScreen() instanceof GameModeSwitcherScreen) mouseFixTimer = 2;
+    }
+
+    @SubscribeEvent
+    public static void fixCursorGrab_onClientTick(TickEvent.ClientTickEvent event) {
+        if (mouseFixTimer == -1) return;
+        if (--mouseFixTimer == 0 && Minecraft.getInstance().screen == null) {
+            Minecraft.getInstance().mouseHandler.mouseGrabbed = false;
+            Minecraft.getInstance().mouseHandler.grabMouse();
+            mouseFixTimer = -1;
+        }
     }
 }

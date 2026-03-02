@@ -21,9 +21,9 @@ public class PortalMilitary extends AbstractPortal {
         this.portraitBlock = Blocks.RED_GLAZED_TERRACOTTA;
         this.icon = ResourceLocation.fromNamespaceAndPath("minecraft", "textures/block/red_glazed_terracotta.png");
         this.canSetRallyPoint = true;
-        productions.add(ProductionItems.BRUTE, Keybindings.keyQ);
-        productions.add(ProductionItems.HEADHUNTER, Keybindings.keyW);
-        productions.add(ProductionItems.MARAUDER, Keybindings.keyE);
+        productions.add(ProductionItems.BRUTE, Keybindings.key3);
+        productions.add(ProductionItems.HEADHUNTER, Keybindings.key4);
+        productions.add(ProductionItems.MARAUDER, Keybindings.key5);
         productions.add(ProductionItems.HOGLIN, Keybindings.keyR);
         productions.add(ProductionItems.BLAZE, Keybindings.keyT);
         productions.add(ProductionItems.WITHER_SKELETON, Keybindings.keyY);

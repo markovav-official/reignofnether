@@ -49,9 +49,9 @@ public class Blacksmith extends ProductionBuilding {
         this.abilities.add(new EquipLeatherChestplate(), Keybindings.keyT);
         this.abilities.add(new EquipChainmailChestplate(), Keybindings.keyY);
 
-        this.productions.add(ProductionItems.IRON_GOLEM, Keybindings.keyQ);
-        this.productions.add(ProductionItems.RESEARCH_GOLEM_SMITHING, Keybindings.keyW);
-        this.productions.add(ProductionItems.RESEARCH_MILITIA_BOWS, Keybindings.keyE);
+        this.productions.add(ProductionItems.IRON_GOLEM, Keybindings.key3);
+        this.productions.add(ProductionItems.RESEARCH_GOLEM_SMITHING, Keybindings.key4);
+        this.productions.add(ProductionItems.RESEARCH_MILITIA_BOWS, Keybindings.key5);
         this.productions.add(ProductionItems.RESEARCH_SUPERIOR_BLACKSMITH, Keybindings.keyR);
     }
 

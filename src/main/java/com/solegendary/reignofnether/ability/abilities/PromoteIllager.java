@@ -42,7 +42,7 @@ public class PromoteIllager extends Ability {
 
     public PromoteIllager() {
         super(UnitAction.PROMOTE_ILLAGER, CD_MAX, RANGE, 0, true, true);
-        this.defaultHotkey = Keybindings.keyW;
+        this.defaultHotkey = Keybindings.key4;
     }
 
     // checks that the unit has a banner and applies the speed buff to nearby friendly units if it is

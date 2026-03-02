@@ -51,9 +51,9 @@ import java.util.Set;
 public class WitchUnit extends Witch implements Unit, RangeIndicator {
     public static final Abilities ABILITIES = new Abilities();
     static {
-        ABILITIES.add(new ThrowLingeringHarmingPotion(8), Keybindings.keyQ);
-        ABILITIES.add(new ThrowLingeringRegenPotion(8), Keybindings.keyW);
-        ABILITIES.add(new ThrowHealingPotion(8), Keybindings.keyE);
+        ABILITIES.add(new ThrowLingeringHarmingPotion(8), Keybindings.key3);
+        ABILITIES.add(new ThrowLingeringRegenPotion(8), Keybindings.key4);
+        ABILITIES.add(new ThrowHealingPotion(8), Keybindings.key5);
         ABILITIES.add(new ThrowWaterPotion(8), Keybindings.keyR);
     }
 

@@ -44,7 +44,7 @@ public class CentralPortal extends ProductionBuilding {
 
         this.startingBlockTypes.add(Blocks.NETHER_BRICKS);
 
-        this.productions.add(ProductionItems.GRUNT, Keybindings.keyQ);
+        this.productions.add(ProductionItems.GRUNT, Keybindings.key3);
     }
 
     public Faction getFaction() {return Faction.PIGLINS;}
